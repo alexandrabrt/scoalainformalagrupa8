@@ -304,36 +304,57 @@ class VehiculTractare(VehiculTeren):
 # print(obiect.var_1)
 
 
-class A:
+# class A:
+#
+#     def info(self):
+#         return "Clasa A"
+#
+#
+# class F:
+#
+#     def info(self):
+#         return "Clasa F"
+#
+#
+# class B(A):
+#
+#     pass
+#
+#     # def info(self):
+#     #     return "Clasa B"
+#
+#
+# class C(B):
+#
+#     pass
+#
+#     # def info(self):
+#     #     return "Clasa C"
+#
+#
+# class D(A, C):
+#     pass
+#
+#
+# print(D().info())
 
-    def info(self):
-        return "Clasa A"
+
+class CatalogPrajtiuri:
+
+    def __init__(self, nume="Catalog", pret=200, gramaj=300):
+        self.nume = nume
+        self.pret = pret
+        self.gramaj = gramaj
 
 
-class F:
+class Tort(CatalogPrajtiuri):
 
-    def info(self):
-        return "Clasa F"
-
-
-class B(A):
-
-    pass
-
-    # def info(self):
-    #     return "Clasa B"
+    def __init__(self, etajat=False, glazura="ciocolata"):
+        a = super().__init__()
+        # print(self.nume)
+        self.nume = "aaaa"
 
 
-class C(B):
+tort1 = Tort()
+print(tort1.gramaj)
 
-    pass
-
-    # def info(self):
-    #     return "Clasa C"
-
-
-class D(A, C):
-    pass
-
-
-print(D().info())
