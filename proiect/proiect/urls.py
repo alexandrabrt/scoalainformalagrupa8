@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls'), {'next_page': '/'}, name='login'),
     path('', LoginView.as_view(template_name='registration/login.html'), name='login'),
     path('locations/', include('aplicatie1.urls')),
+    path('companies/', include('aplicatie2.urls')),
     path('profile/', include('userprofile.urls')),
 
 ]
