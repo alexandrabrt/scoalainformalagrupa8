@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'aplicatie1',
     'userprofile',
     'aplicatie2',
+    'rest_framework',
+    'myapi',
 ]
 
 MIDDLEWARE = [
@@ -132,3 +134,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/locations/'
 LOGOUT_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+APPEND_SLASH = False
